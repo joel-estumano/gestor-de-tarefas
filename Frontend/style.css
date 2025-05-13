@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+button{
+  background-color: #0049ab;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #146aa7e2; /* cor ao passar o mouse */
+  }
+}
+
+input, textarea {
+padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  
+}
+.tarefa-concluida {
+  background-color: #d4edda;
+  border: 1px solid #28a745;
+}
+.btn-trash{
+  background-color: red;
+  cursor: pointer;
+}
+.btn-check{
+  background-color: green;
+}
+.btn-edit {
+  background-color: #ffc107; /* amarelo */
+  color: white;
+  border: none;
+  
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+  
+
+.info p{
+  margin: 5px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  border-radius: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,34 @@
+# node_modules para qualquer pasta (backend/frontend)
+**/node_modules/
+
+# arquivos de ambiente
+**/.env
+**/.env.*  # suporta arquivos como .env.development
+
+# pastas de build/output
+**/dist/
+**/build/
+
+# arquivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# diretórios de cache
+**/.turbo/
+**/.next/
+**/.cache/
+**/.parcel-cache/
+**/.vite/
+
+# arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# arquivos do editor
+.vscode/
+.idea/
+
+# coverage de testes
+**/coverage/
