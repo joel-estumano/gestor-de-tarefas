@@ -41,20 +41,32 @@ async function carregarTarefas() {
   tarefas.forEach((tarefa) => {
     const li = document.createElement('li');
     li.setAttribute('data-id', tarefa.id);
+
+    // Verifica se a data está vencida
+    const hoje = new Date();
+    const dataVencimento = new Date(tarefa.dueDate);
+
+    // Zera o horário para comparar apenas a data
+    hoje.setHours(0, 0, 0, 0);
+    dataVencimento.setHours(0, 0, 0, 0);
+
+    if (dataVencimento < hoje && !tarefa.completed) {
+      li.classList.add('tarefa-vencida');
+    }
+
     if (tarefa.completed) {
       li.classList.add('tarefa-concluida');
     }
+
     li.innerHTML = `
     <div class="info">
-      <p><strong>titulo: </strong> ${tarefa.title}</p>
+      <p><strong>Título:</strong> ${tarefa.title}</p>
       <p><strong>Descrição:</strong> ${tarefa.description}</p>
       <p><strong>Vence em:</strong> ${formatarData(tarefa.dueDate)}</p>
     </div>
     <div class="acoes">
       <button class="btn-check" onclick="concluirTarefa(${tarefa.id})"><i class="fas fa-check"></i></button>
-      <button class="btn-edit" onclick="editarTarefa(${tarefa.id}, '${tarefa.title}', '${tarefa.description}', '${tarefa.dueDate}')">
-          <i class="fas fa-pen"></i>
-      </button>
+      <button class="btn-edit" onclick="editarTarefa(${tarefa.id}, '${tarefa.title}', '${tarefa.description}', '${tarefa.dueDate}')"><i class="fas fa-pen"></i></button>
       <button class="btn-trash" onclick="removerTarefa(${tarefa.id})"><i class="fas fa-trash"></i></button>
     </div>
   `;

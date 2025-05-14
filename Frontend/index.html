@@ -16,8 +16,11 @@
   <h1>Gestor de Tarefas</h1>
 
   <form id="form-tarefa">
-    <input type="text" id="titulo" placeholder="Título" required />
-    <textarea id="descricao" placeholder="Descrição" required></textarea>
+    <Label>Titulo:</Label>
+    <input type="text" id="titulo" placeholder="Nome da tarefa" required />
+    <Label>Descrição:</Label>
+    <textarea id="descricao" placeholder="O que iremos fazer!" required></textarea>
+    <Label>Data de vencimento:</Label>
     <input type="date" id="vencimento" required />
     <button type="submit">Adicionar Tarefa</button>
   </form>
