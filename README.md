@@ -6,7 +6,9 @@ Este é um projeto de **Gestão de Tarefas** com um back-end desenvolvido em **N
 
 - **Back-end**: NestJS (Node.js)
 - **Front-end**: HTML, CSS, JavaScript puro
-- **Banco de dados**: (Especificar o banco de dados utilizado, se for o caso, como PostgreSQL, MongoDB, etc.)
+- **Banco de dados**: SQLite (arquivo local db.sqlite), ORM: TypeORM (mapeia as entidades Task para tabelas no banco)
+
+
 
 ## Estrutura do Projeto
 
