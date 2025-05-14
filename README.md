@@ -1,6 +1,6 @@
 # Gestor de Tarefas
 
-Este é um projeto de **Gestão de Tarefas** com um back-end desenvolvido em **NestJS** e um front-end em **HTML, CSS e JavaScript puro**. O sistema permite o gerenciamento de tarefas, incluindo funcionalidades como adicionar, editar, concluir e excluir tarefas.
+Este é um projeto de **Gestão de Tarefas** com um back-end desenvolvido em **NestJS** e um front-end em **HTML, CSS e JavaScript puro**. O sistema permite o gerenciamento de tarefas, incluindo funcionalidades como adicionar, editar, concluir, excluir e aviso de vencimento da tarefas.
 
 ## Tecnologias
 
